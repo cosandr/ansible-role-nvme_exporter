@@ -1,0 +1,11 @@
+---
+
+go_arch_map:
+  i386: '386'
+  x86_64: 'amd64'
+  aarch64: 'arm64'
+  armv7l: 'arm'
+  armv6l: 'arm'
+
+go_arch: "{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}"
+__nvme_exporter_archive_name: "nvme_exporter-{{ nvme_exporter_version }}.linux-{{ go_arch }}"

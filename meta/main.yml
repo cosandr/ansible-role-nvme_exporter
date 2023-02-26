@@ -1,0 +1,28 @@
+---
+
+galaxy_info:
+  role_name: nvme_exporter
+  author: Andrei Costescu
+  namespace: cosandr
+  description: Ansible role for setting up nvme_exporter.
+
+  issue_tracker_url: https://github.com/cosandr/ansible-role-nvme_exporter/issues
+
+  license: MIT
+
+  min_ansible_version: "2.12"
+
+  platforms:
+    - name: EL
+      versions:
+        - "8"
+        - "9"
+    - name: Fedora
+      versions:
+        - "35"
+        - "36"
+        - "37"
+
+  galaxy_tags: []
+
+dependencies: []

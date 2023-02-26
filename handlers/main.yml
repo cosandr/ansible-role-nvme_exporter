@@ -1,0 +1,6 @@
+---
+
+- name: Restart nvme exporter
+  ansible.builtin.systemd:
+    name: nvme-exporter.service
+    state: restarted

@@ -1,0 +1,4 @@
+---
+
+nvme_exporter_version: latest
+nvme_exporter_listen_address: ":9998"

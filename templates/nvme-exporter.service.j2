@@ -1,0 +1,11 @@
+[Unit]
+Description=Prometheus exporter for nvme-cli
+Documentation=https://github.com/cosandr/nvme_exporter
+After=network-online.target
+
+[Service]
+Restart=always
+ExecStart=/usr/local/bin/nvme_exporter -web.listen-address {{ nvme_exporter_listen_address }}
+
+[Install]
+WantedBy=default.target
