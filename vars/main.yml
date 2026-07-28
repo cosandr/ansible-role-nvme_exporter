@@ -7,5 +7,5 @@ go_arch_map:
   armv7l: 'arm'
   armv6l: 'arm'
 
-go_arch: "{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}"
+go_arch: "{{ go_arch_map[ansible_facts.architecture] | default(ansible_facts.architecture) }}"
 __nvme_exporter_archive_name: "nvme_exporter-{{ nvme_exporter_version }}.linux-{{ go_arch }}"
